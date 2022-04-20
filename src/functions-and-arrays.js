@@ -151,11 +151,9 @@ const wordsCount = [
 function howManyTimes(arr) {
   let counter = 0;
   const checkWord = 'matter';
-  for (let i = 0; i < arr.length; i++){
-    if (checkWord === arr[i]){
+  if (arr.includes(checkWord)){
       counter++; 
     }
-  }
 return counter;  
 }
 
